@@ -13,7 +13,8 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
-        // Write your code here
+        System.out.println('a');// Write your code here
+        System.out.println('f');
     }
 
     /**
@@ -23,7 +24,9 @@ public class Main {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
-        // Write your code here
+        System.out.println("My age is " + 30);// Write your code here
+        System.out.println("I had lunch today? " + true );// Write your code here
+        System.out.println("The price of my lunch is " + 4.99 );// Write your code here
     }
 
     /**
@@ -37,6 +40,12 @@ public class Main {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-        // Write your code here
+        int myAge = 30;// Write your code here
+        double lunchPrice = 4.99;
+        boolean iHadLunch= true;
+        System.out.println("My age is " + myAge);
+        System.out.println("My lunch price is " + lunchPrice);
+        System.out.println("I had lunch today? " + iHadLunch);
+
     }
 }

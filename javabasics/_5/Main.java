@@ -26,7 +26,11 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
-        // Write your code here
+       int x = 5; // Write your code here
+       x = x + 1; // or x += 1
+        System.out.println(x);
+       x = x -1; // or x -= 1
+        System.out.println(x);
     }
 
     /**
@@ -37,7 +41,11 @@ public class Main {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
-        // Write your code here
+        double x = 10.5;// Write your code here
+        x = x * 2;
+        System.out.println(x);
+        x = x/2;
+        System.out.println(x);
     }
 
     /**
@@ -54,7 +62,11 @@ public class Main {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-        // Write your code here
+       double celsius = 30;// Write your code here
+       double fahrenheit = celsius * 1.8 + 32;
+        System.out.println(celsius);
+        System.out.println(fahrenheit);
+
     }
 
     /**
@@ -66,7 +78,13 @@ public class Main {
      */
     private static void exercise4Bonus() {
         System.out.println("\nExercise 4:");
-        // Write your code here
+        int age = 10;// Write your code here
+        age++;
+        age++;
+        age++;
+        age++;
+        age++;
+        System.out.println(age);
     }
 
     /**
@@ -82,7 +100,14 @@ public class Main {
      */
     private static void exercise5Bonus() {
         System.out.println("\nExercise 5:");
-        // Write your code here
+        int age = 50;// Write your code here
+        age -= 50;
+        int secondAge= 50;
+        secondAge -= 20;
+        secondAge -= 20;
+        secondAge -= 10;
+        System.out.println(age);
+        System.out.println(secondAge);
     }
 
     /**

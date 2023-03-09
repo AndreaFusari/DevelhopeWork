@@ -16,7 +16,9 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
-        // Write your code here
+        double value = 30;// Write your code here
+        double valueSquareRoot = Math.sqrt(value);
+        System.out.println(valueSquareRoot);
     }
 
     /**
@@ -33,10 +35,10 @@ public class Main {
         int valueA = 5;
         int valueB = 10;
 
-        System.out.println("Max=");
-        System.out.println("Min=");
-
         // Write your code here
+        System.out.println("Max="+ Math.max(valueA,valueB));
+        System.out.println("Min=" + Math.min(valueA,valueB));
+
     }
 
     /**
@@ -48,7 +50,8 @@ public class Main {
         int totalMoney = 50;
         int costPerBurger = 9;
         // Write your code here
-        System.out.println("Remainder=");
+        int remainingAmountOfMoneyIfWeBuyAsManyBurgersAsPossible = totalMoney % costPerBurger;
+        System.out.println("Remainder="+ remainingAmountOfMoneyIfWeBuyAsManyBurgersAsPossible);
     }
 
     /**
@@ -65,17 +68,17 @@ public class Main {
 
         double ourValue = 4.5;
 
-        // Replace with your comment 1
+        // Replace with your comment 1 arrotonda per eccesso un numero decimale
         System.out.println(ourValue + " after using ceiling=" + Math.ceil(ourValue));
-        // Replace with your comment 2
+        // Replace with your comment 2 arrotonda per difetto un numero decimale
         System.out.println(ourValue + " after using floor=" + Math.floor(ourValue));
-        // Replace with your comment 3
+        // Replace with your comment 3  arrotonda per un numero decimale al numero intero più vicino
         System.out.println(ourValue + " after using round=" + Math.round(ourValue));
-        // Replace with your comment 4
+        // Replace with your comment 4 eleva alla seconda our value
         System.out.println(ourValue + " after using powerOf with the value of 2=" + Math.pow(ourValue, 2));
-        // Replace with your comment 5
+        // Replace with your comment 5 eleva alla terza our value
         System.out.println(ourValue + " after using powerOf with the value of 3=" + Math.pow(ourValue, 3));
-        // Replace with your comment 6
+        // Replace with your comment 6 moltiplica our value per un numero random tra 0 e 1
         System.out.println(ourValue + " times random =" + Math.random() * ourValue);
     }
 }
