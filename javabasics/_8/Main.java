@@ -18,7 +18,10 @@ public class Main {
     private static void exercise1() {
         System.out.println("\nExercise 1:");
         String ourNumberStr = "88";
-        //Write your code here
+        int ourNumberStrAsInt = Integer.valueOf(ourNumberStr);//Write your code here
+        ourNumberStrAsInt += 2;
+        ourNumberStr = String.valueOf(ourNumberStrAsInt);
+        System.out.println(ourNumberStr);
     }
 
     /**
@@ -30,13 +33,13 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2a:");
         char ourChar = 'a';
-        String ourCharString = " "; // <--- Change this line
+        String ourCharString = String.valueOf(ourChar).toUpperCase(); // <--- Change this line
         // Notice below what happens, the `charAt()` method
         System.out.println(ourCharString.charAt(0));
 
         System.out.println("\nExercise 2b:");
         String anotherString = "Hello world";
-        int charAtIndex = 0; // <--- Change this line
+        int charAtIndex = 6; // il metodo charAt prende il carattere che corrispopnde all'indice tra ()
         System.out.println("Make this print 'w' -> current result: '" + anotherString.charAt(charAtIndex) + "'");
     }
 
@@ -50,13 +53,13 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
-        String intStrToConvert = "5.5"; // Change this line
+        String intStrToConvert = "5"; // Change this line
         System.out.println(Integer.valueOf(intStrToConvert));
 
-        String booleanStrToConvert = "maybe"; // And this line
+        String booleanStrToConvert = "true"; // And this line
         System.out.println(Boolean.valueOf(booleanStrToConvert));
 
-        String doubleStrToConvert = "true"; // Also this line
+        String doubleStrToConvert = "8.5"; // Also this line
         System.out.println(Double.valueOf(doubleStrToConvert));
     }
 
@@ -75,6 +78,14 @@ public class Main {
     private static void exercise4() {
         System.out.println("\nExercise 4:");
         String startStr = "5 ";
-        // Write your code here
+        startStr = startStr.trim();// Write your code here
+        int startStrAsInt = Integer.valueOf(startStr);
+        startStrAsInt *= 2;
+        startStr = String.valueOf(startStrAsInt);
+        startStr += startStr;
+        double startStrAsDouble = Double.valueOf(startStr);
+        startStrAsDouble /= 3.5;
+        System.out.println(Math.floor(startStrAsDouble));
+
     }
 }
