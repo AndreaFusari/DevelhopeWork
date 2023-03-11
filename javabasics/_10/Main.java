@@ -25,12 +25,16 @@ public class Main {
     private static void exercise1() {
         System.out.println("\nExercise 1 - Comfortable clothes:");
 
-        double temperatureInCelsius = 25;
+        double temperatureInCelsius = 19;
         double isWarmTemperatureInCelsius = 20;
         boolean isWarm = temperatureInCelsius >= isWarmTemperatureInCelsius;
-        boolean wearingShorts = true;
-
+        boolean wearingShorts = false;
         // Write your code here
+        if((isWarm && wearingShorts) || (!isWarm && !wearingShorts)){
+            System.out.println("Comfortable clothes");
+        } else {
+            System.out.println("Uncomfortable clothes");
+        }
     }
 
     /**
@@ -45,14 +49,16 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2 - Club Bouncer:");
         String shoeType = "fancy";
-
-
-
         int age = 30;
-        double eurosInPocket = 7.5;
+        double eurosInPocket = 25;
         double eurosForEntry = 10;
 
         // Write your code here
+        if (shoeType=="fancy" && age>=18 && eurosInPocket>=10){
+            System.out.println("Come in");
+            } else {
+            System.out.println("Stay out");
+        }
     }
 
     /**
@@ -72,8 +78,25 @@ public class Main {
         System.out.println("\nExercise 3 - Test Grader:");
         double ourTestScore = 8;
         double maxTestScore = 10;
-        boolean isTestRetry = true;
+        boolean isTestRetry = !true;
         //Write your code here
+        double ourTestScoreInPercent= (ourTestScore / maxTestScore) * 100;
+
+        if(isTestRetry && ourTestScoreInPercent >= 70){
+            System.out.println("C");
+        } else if (ourTestScoreInPercent>=90) {
+            System.out.println("A");
+        }
+         else if (ourTestScoreInPercent>=80) {
+            System.out.println("B");
+
+         } else if (ourTestScoreInPercent>=70) {
+            System.out.println("C");
+
+        } else if (ourTestScoreInPercent>=60) {
+            System.out.println("D");
+
+        } else  { System.out.println("F"); }
     }
 
 
@@ -87,9 +110,14 @@ public class Main {
      */
     private static void exercise4Bonus() {
         System.out.println("\nExercise 4 (Optional) - One way road:");
-        boolean carIsDrivingFromLeftToRight = true;
+        boolean carIsDrivingFromLeftToRight = false;
         boolean carIsDrivingFromRightToLeft = false;
 
         //Write your code here
+       if (carIsDrivingFromLeftToRight ^ carIsDrivingFromRightToLeft){
+           System.out.println("Safe");
+       } else {
+           System.out.println("CRASH! or No cars");
     }
+}
 }
