@@ -54,7 +54,7 @@ public class Main {
         double eurosForEntry = 10;
 
         // Write your code here
-        if (shoeType=="fancy" && age>=18 && eurosInPocket>=10){
+        if (shoeType.equals("fancy") && age>=18 && eurosInPocket>=10){
             System.out.println("Come in");
             } else {
             System.out.println("Stay out");
@@ -78,7 +78,7 @@ public class Main {
         System.out.println("\nExercise 3 - Test Grader:");
         double ourTestScore = 8;
         double maxTestScore = 10;
-        boolean isTestRetry = !true;
+        boolean isTestRetry = true;
         //Write your code here
         double ourTestScoreInPercent= (ourTestScore / maxTestScore) * 100;
 
