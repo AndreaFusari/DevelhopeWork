@@ -13,7 +13,6 @@ public class Main {
 
     /*
             Remember the symbols you need to do maths are
-
             Plus = +
             Minus = -
             Multiply or times = *
@@ -26,10 +25,10 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
-       int x = 5; // Write your code here
-       x = x + 1; // or x += 1
+        int x = 5; // Write your code here
+        x = x + 1; // or x += 1
         System.out.println(x);
-       x = x -1; // or x -= 1
+        x = x -1; // or x -= 1
         System.out.println(x);
     }
 
@@ -62,8 +61,8 @@ public class Main {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-       double celsius = 30;// Write your code here
-       double fahrenheit = celsius * 1.8 + 32;
+        double celsius = 30;// Write your code here
+        double fahrenheit = celsius * 1.8 + 32;
         System.out.println(celsius);
         System.out.println(fahrenheit);
 
