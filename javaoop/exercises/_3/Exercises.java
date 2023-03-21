@@ -1,5 +1,8 @@
 package javaoop.exercises._3;
 
+import java.time.LocalDate;
+import java.time.Month;
+
 public class Exercises {
     public static void main(String[] args) {
         exercise1();
@@ -18,8 +21,26 @@ public class Exercises {
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
+        Student student= new Student();
 
-        // Write and use your 5 getters and setters!
+        student.setName("Mario Rossi");// Write and use your 5 getters and setters!
+        student.setAge(30);
+        student.setStudentBirthday(LocalDate.of(1992, Month.AUGUST,20));
+        student.setCity("Torino");
+        student.setStudentGender("Male");
+
+        System.out.println(student);
+
+        Student student1 = new Student();
+
+        student1.setName("Laura Blu");
+        student1.setAge(24);
+        student1.setStudentBirthday(LocalDate.of(1999, Month.AUGUST,10));
+        student1.setCity("Milano");
+        student1.setStudentGender("Female");
+
+        System.out.println(student1.getStudentBirthday());
+        System.out.println(student1);
     }
 
     /**
@@ -35,7 +56,12 @@ public class Exercises {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
 
-        //Write your code here
+       Student student2 = new Student();//Write your code here
+        student2.setAge(15);
+        student2.setName(" 2Marco");
+        student2.setStudentGender("rmale");
+        student2.setCity("Roma");
+        student2.setStudentBirthday(LocalDate.of(2008,Month.APRIL,22));
     }
 
 }

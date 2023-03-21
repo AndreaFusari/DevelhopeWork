@@ -68,9 +68,6 @@ public class Exercises {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
         Course course = new Course();
-        course.courseName = "Java Programming";
-        course.maxStudents = 20;
-        course.qualityRatingOutOf10 = 8.5;
         course.students = new ArrayList<>();
 
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");

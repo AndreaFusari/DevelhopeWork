@@ -27,7 +27,8 @@ public class Exercises {
         List<Student> students = new ArrayList<>();
 
         for (int i = 0; i < studentAges.size(); i++) {
-            // Write create students
+            Student student1 = new Student(studentNames.get(i),studentAges.get(i)); // Write create students
+            students.add(student1);
         }
     }
 
@@ -43,11 +44,11 @@ public class Exercises {
         System.out.println("\nExercise 2:");
 
         // Once you've added the correct constructors uncomment the code below, there should be errors!
-//         List<Student> students = Arrays.asList(
-//         new Student("Alice", 33),
-//         new Student("Bob"),
-//         new Student(33),
-//         new Student()
-//        );
+         List<Student> students = Arrays.asList(
+         new Student("Alice", 33),
+         new Student("Bob"),
+         new Student(33),
+         new Student()
+        );
     }
 }

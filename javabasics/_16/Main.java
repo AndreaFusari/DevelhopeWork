@@ -1,5 +1,7 @@
 package javabasics._16;
 
+import javaoop.exercises._1.Course;
+
 import java.util.Arrays;
 import java.util.List;
 
