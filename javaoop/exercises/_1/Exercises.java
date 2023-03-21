@@ -1,11 +1,14 @@
 package javaoop.exercises._1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Exercises {
     public static void main(String[] args) {
+
         exercise2();
+        exercise3();
     }
 
     /**
@@ -21,27 +24,33 @@ public class Exercises {
 
     /**
      * 2: use the class called 'Student', add variables
-     *    (class variables are called 'fields' or 'attributes')
-     *    called 'name' and 'age'
-     *
-     *    Using the function below set the student name and ages
-     *
+     * (class variables are called 'fields' or 'attributes')
+     * called 'name' and 'age'
+     * <p>
+     * Using the function below set the student name and ages
      */
     private static void exercise2() {
         System.out.println("Exercise 2:");
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
-
-        // Use a for i loop
+        List<Student> students = new ArrayList<>();// Use a for i loop
+        for (int i = 0; i < studentNames.size(); i++) {
+            Student newStudent = createNewStudent(studentNames.get(i), studentAges.get(i));
+            students.add(newStudent);
+        }
     }
 
     private static Student createNewStudent(String name, Integer age) {
         Student student = new Student();
-
         // Write your code here
+        student.name = name;
+        student.age = age;
+        System.out.println("New student: " + student.name + " " + student.age);
+
 
         return student;
     }
+
 
     /*
      * 3: Finally lets edit our 'Course' class once more,
@@ -58,7 +67,27 @@ public class Exercises {
 
     private static void exercise3() {
         System.out.println("\nExercise 3:");
+        Course course = new Course();
+        course.courseName = "Java Programming";
+        course.maxStudents = 20;
+        course.qualityRatingOutOf10 = 8.5;
+        course.students = new ArrayList<>();
 
-        // Write your code here
+        List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
+        List<Integer> studentAges = Arrays.asList(23, 31, 38);
+
+        double sumAge = 0.0;
+        System.out.println("Students Java course:");
+        for (int i = 0; i < studentNames.size(); i++) {
+            Student student = new Student();
+            student.name = studentNames.get(i);
+            student.age = studentAges.get(i);
+            sumAge += student.age;
+            course.students.add(student);
+            System.out.println(student.name +" "+ student.age);
+        }
+        double averageAge = sumAge / course.students.size();
+        System.out.println("Average student age: " + averageAge);
     }
 }
+
