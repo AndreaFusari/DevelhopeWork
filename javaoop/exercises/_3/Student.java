@@ -55,7 +55,9 @@ public class Student {
         this.studentBirthday = studentBirthday;
     }
 
+    static int countGetCity=0;
     public String getCity() {
+        countGetCity ++;
         return city;
     }
 

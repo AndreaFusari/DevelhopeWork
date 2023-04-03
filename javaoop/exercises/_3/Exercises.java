@@ -28,6 +28,7 @@ public class Exercises {
         student.setStudentBirthday(LocalDate.of(1992, Month.AUGUST,20));
         student.setCity("Torino");
         student.setStudentGender("Male");
+        student.getCity();
 
         System.out.println(student);
 
@@ -38,6 +39,7 @@ public class Exercises {
         student1.setStudentBirthday(LocalDate.of(1999, Month.AUGUST,10));
         student1.setCity("Milano");
         student1.setStudentGender("Female");
+        student1.getCity();
 
         System.out.println(student1.getStudentBirthday());
         System.out.println(student1);
@@ -62,6 +64,9 @@ public class Exercises {
         student2.setStudentGender("rmale");
         student2.setCity("Roma");
         student2.setStudentBirthday(LocalDate.of(2008,Month.APRIL,22));
+        student2.getCity();
+        student2.getCity();
+        System.out.println(Student.countGetCity);
     }
 
 }
